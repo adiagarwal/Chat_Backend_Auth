@@ -1,0 +1,20 @@
+scalar JSON
+scalar Date
+
+type Response{
+    status:Int
+    msg:String
+    data:JSON
+}
+
+type Query{
+    _dummy:String
+}
+
+type Mutation{
+    signUp(username:String!, email:String! , password:String! , confirmpassword:String!):Response
+    signin(email:String! , password:String!):Response
+}
+
+
+
